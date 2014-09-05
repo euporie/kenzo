@@ -15,7 +15,7 @@ def do_login():
     username = request.forms.get('username')
     password = request.forms.get('password')
     if True:
-        return lovechart(username,password)
+        return "<img src=http://bitatm.io/kenzo/"+ lovechart(username,password) + " >" 
     else:
         return "<p>Login failed.</p>"
 
