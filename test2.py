@@ -42,7 +42,7 @@ def lovechart(api='4srgf38o',key='52eed60d426356ee3dc0fe967d50b6ab'):
 
 
 
-    ax.plot(days, values, 'g-', linewidth=5)  #plots the values against dates
+    ax.plot(days, values, 'b-', linewidth=5)  #plots the values against dates
     fig.autofmt_xdate()  #auto formats dates displayed along the x axis
     fig.set_size_inches(10,10)
 
@@ -50,8 +50,6 @@ def lovechart(api='4srgf38o',key='52eed60d426356ee3dc0fe967d50b6ab'):
     outtext2=outtext.replace(" ", "").replace("-", "")
     print(outtext2)
     plt.savefig(outtext2,
-                facecolor=(0.713, 0.803, 0.901),
-                edgecolor=(0.713, 0.803, 0.901),
                 dpi=100
     )  #displays the plot.
 
