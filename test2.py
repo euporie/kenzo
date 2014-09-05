@@ -2,11 +2,14 @@ from __future__ import print_function
 import urllib.request
 import json
 import numpy as np
+import matplotlib as mpl
+mpl.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.mlab as mlab
 import matplotlib.cbook as cbook
 import matplotlib.ticker as ticker
 from datetime import datetime
+
 
 
 def lovechart(api='4srgf38o',key='52eed60d426356ee3dc0fe967d50b6ab'):
@@ -39,7 +42,7 @@ def lovechart(api='4srgf38o',key='52eed60d426356ee3dc0fe967d50b6ab'):
 
 
 
-    ax.plot(days, values, 'g-', linewidth=10)  #plots the values against dates
+    ax.plot(days, values, 'g-', linewidth=5)  #plots the values against dates
     fig.autofmt_xdate()  #auto formats dates displayed along the x axis
     fig.set_size_inches(10,10)
 
