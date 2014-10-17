@@ -4,8 +4,8 @@ from test2 import lovechart
 def login():
     return '''
         <form action="/login" method="post">
-            Username: <input name="username" type="text" />
-            Password: <input name="password" type="password" />
+            API ID: <input name="username" type="text" />
+            API KEY: <input name="password" type="password" />
             <input value="Login" type="submit" />
         </form>
     '''
@@ -19,5 +19,5 @@ def do_login():
     else:
         return "<p>Login failed.</p>"
 
-run(host='0.0.0.0', port=8080, debug=True)
+run(host='0.0.0.0', port=3030, debug=True)
 
